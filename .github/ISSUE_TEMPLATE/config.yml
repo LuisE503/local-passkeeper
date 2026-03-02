@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/yourusername/local-passkeeper/discussions
+    about: Ask questions, share ideas, or discuss with the community
+  - name: 🔒 Security Vulnerability
+    url: https://github.com/yourusername/local-passkeeper/security/advisories/new
+    about: Report security vulnerabilities privately (DO NOT use public issues)
+  - name: 📚 Documentation
+    url: https://github.com/yourusername/local-passkeeper#readme
+    about: Read the documentation and guides

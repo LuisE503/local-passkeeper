@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-passkeeper"
+version = "0.1.0"
+description = "A secure, local-first password manager with CLI"
+readme = "README.md"
+authors = [
+    { name = "LuisE503", email = "luise503@users.noreply.github.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.7",
+    "rich>=13.7.1",
+    "cryptography>=42.0.5",
+    "pydantic>=2.7.0",
+    "customtkinter>=5.2.2",
+    "pillow>=10.3.0",
+    "mnemonic>=0.20"
+]
+
+[project.scripts]
+passkeeper = "passkeeper.gui.app:main"
+passkeeper-cli = "passkeeper.cli.commands:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
